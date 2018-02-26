@@ -50,6 +50,7 @@ $ python
 
 
     Altinok, D.: DEMorphy, German Language Analyzer, 
+    Berlin, 2018
 
 Links:
 
