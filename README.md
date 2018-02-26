@@ -50,7 +50,6 @@ $ python
 
 
     Altinok, D.: DEMorphy, German Language Analyzer, 
-    4Com Center for German Language Intelligence, 2017
 
 Links:
 
@@ -64,4 +63,4 @@ Links:
 
 ## License
 
-[MIT](https://github.com/4Com/DEMorphy/blob/master/LICENSE)
+[MIT](https://github.com/DuyguA/DEMorphy/blob/master/LICENSE)
