@@ -24,7 +24,7 @@ setup(
 
     license="MIT",
     description="German morphological analyzer",
-    long_description=open("README.rst").read(),
+    long_description=open("README.md").read(),
     
     packages=[
         "demorphy",
