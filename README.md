@@ -64,4 +64,4 @@ Links:
 
 ## License
 
-[MIT](https://github.com/DuyguA/DEMorphy/blob/master/LICENSE)
+[MIT](https://github.com/DuyguA/DEMorphy/blob/master/LICENSE.md)
