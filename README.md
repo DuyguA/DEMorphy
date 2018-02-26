@@ -26,7 +26,7 @@ OS X & Linux, download package and data separately. Make a
 pip install demorphy
 ```
 
-then, download [the dictionary](https://github.com/DuyguA/DEMorphy/blob/master/DEMorphy/data/words.dg) and place it under **demorphy/demorphy/data/**.
+then, download [the dictionary](https://github.com/DuyguA/DEMorphy/blob/master/data/words.dg) and place it under **demorphy/demorphy/data/**.
 
 ## Usage 
 
