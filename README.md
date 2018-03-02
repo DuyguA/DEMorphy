@@ -3,6 +3,7 @@
 DEMorphy is a morphological analyzer for German language. DEMorphy provides gender, person, singular/plural etc. full inflection information as well as word lemma.  
 
 * source code and usage docs: [Github](https://github.com/DuyguA/DEMorphy)
+* companion German morphological dictionaries [Github](https://github.com/DuyguA/german-morph-dictionaries)
 
 
 ## Installation
@@ -39,7 +40,7 @@ Usage with cache decorators:
 >>> from demorphy import Analyzer
 >>> from demorphy.cache import memoize, lrudecorator
 >>> analyzer = Analyzer(char_subs_allowed=True)
->>> cache_size = #you can arrange the size or unlimited cache. For German lang, we recommed 200 as cache size.
+>>> cache_size = 200 #you can arrange the size or unlimited cache. For German lang, we recommed 200 as cache size.
 >>> cached = memoize if cache_size=="unlim" else (lrudecorator(cache_size) if cache_size else (lambda x: x))
 >>> analyze = cached(analyzer.analyze)
 >>> s = analyze(u"gegangen")
@@ -76,7 +77,7 @@ One can iterate over the lexicon words with a given prefix. Following code will 
 
 Links:
 
-* [PDF](www.arxiv.org/demorphypage)
+* [PDF](https://arxiv.org/abs/218.2022)
 * [Short Survey on German 2-Level Morphology](www.linkto2levelpage.de)
 * [Possible usages of DEMorphy in NLP projects](www.linktocustomer.de)
 
