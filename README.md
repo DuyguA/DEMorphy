@@ -34,6 +34,40 @@ $ python
 {'CATEGORY': u'V', 'LEMMA': u'gehen', 'STTS_TAG': u'V', 'TENSE': u'ppast', 'PTB_TAG': u'V'}
 ```
 
+Usage with cache decorators:
+
+```python
+>>> from demorphy import Analyzer
+>>> from demorphy.cache import memoize, lrudecorator
+>>> analyzer = Analyzer(char_subs_allowed=True)
+>>> cached = memoize if cache_size=="unlim" else (lrudecorator(cache_size) if cache_size else (lambda x: x))
+>>> analyze = cached(analyzer.analyze)
+>>> s = analyze(u"gegangen")
+>>> for anlyss in s:
+        print anlyss
+{'CATEGORY': u'ADJ', 'PTB_TAG': u'JJ', 'STTS_TAG': u'ADJD', 'ADDITIONAL_ATTRIBUTES': u'<adv>', 'DEGREE': u'pos', 'LEMMA': u'gegangen'}
+{'CATEGORY': u'ADJ', 'PTB_TAG': u'JJ', 'STTS_TAG': u'ADJD', 'ADDITIONAL_ATTRIBUTES': u'<pred>', 'DEGREE': u'pos', 'LEMMA': u'gegangen'}
+{'CATEGORY': u'V', 'LEMMA': u'gehen', 'STTS_TAG': u'V', 'TENSE': u'ppast', 'PTB_TAG': u'V'}
+```
+
+Iterating over all the lexicon:
+
+```python
+>>> from demorphy import Analyzer
+>>> analyzer = Analyzer(char_subs_allowed=True)
+>>> ix = analyzer.iter_lexicon_formatted()
+>>> for i in x:
+        print(i)
+```
+One can iterate over the lexicon words with a given prefix. Following code will iterate over all the words that begins with "ge":
+
+```python
+>>> ix = analyzer.iter_lexicon_formatted(prefix=u"ge")
+>>> for i in x:
+        print(i)
+```
+
+
 ## Citing
 
 
