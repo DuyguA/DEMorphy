@@ -3,7 +3,7 @@
 DEMorphy is a morphological analyzer for German language. DEMorphy provides gender, person, singular/plural etc. full inflection information as well as word lemma.  
 
 * docs: https://demorphy.readthedocs.io
-* source code: [github](https://github.com/DuyguA/DEMorphy)
+* source code: [Github](https://github.com/DuyguA/DEMorphy)
 
 
 ## Installation
@@ -11,22 +11,10 @@ DEMorphy is a morphological analyzer for German language. DEMorphy provides gend
 OS X & Linux, directly from Github:
 
 ```sh
-pip install git+git://github.com/DuyguA/DEMorphy.git
+git clone https://github.com/DuyguA/DEMorphy.git
+cd DEMorphy
+python setup.py install
 ```
-
-or
-
-```sh
-pip install git+https://github.com/DuyguA/DEMorphy.git
-```
-
-OS X & Linux, download package and data separately. Make a 
-
-```sh
-pip install demorphy
-```
-
-then, download [the dictionary](https://github.com/DuyguA/DEMorphy/blob/master/data/words.dg) and place it under **demorphy/demorphy/data/**.
 
 ## Usage 
 
@@ -49,7 +37,7 @@ $ python
 ## Citing
 
 
-    Altinok, D.: DEMorphy, German Language Analyzer, 
+    Altinok, D.: DEMorphy, German Language Analyzer
     Berlin, 2018
 
 Links:
