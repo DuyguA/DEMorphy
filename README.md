@@ -2,8 +2,7 @@
 
 DEMorphy is a morphological analyzer for German language. DEMorphy provides gender, person, singular/plural etc. full inflection information as well as word lemma.  
 
-* docs: https://demorphy.readthedocs.io
-* source code: [Github](https://github.com/DuyguA/DEMorphy)
+* source code and usage docs: [Github](https://github.com/DuyguA/DEMorphy)
 
 
 ## Installation
@@ -40,6 +39,7 @@ Usage with cache decorators:
 >>> from demorphy import Analyzer
 >>> from demorphy.cache import memoize, lrudecorator
 >>> analyzer = Analyzer(char_subs_allowed=True)
+>>> cache_size = #you can arrange the size or unlimited cache. For German lang, we recommed 200 as cache size.
 >>> cached = memoize if cache_size=="unlim" else (lrudecorator(cache_size) if cache_size else (lambda x: x))
 >>> analyze = cached(analyzer.analyze)
 >>> s = analyze(u"gegangen")
