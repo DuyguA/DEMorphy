@@ -11,9 +11,9 @@ DEMorphy is a morphological analyzer for German language. DEMorphy provides gend
 OS X & Linux, directly from Github:
 
 ```sh
-git clone https://github.com/DuyguA/DEMorphy
-cd DEMorphy
-python setup.py install
+$ git clone https://github.com/DuyguA/DEMorphy
+$ cd DEMorphy
+$ python setup.py install
 ```
 
 ## Usage 
