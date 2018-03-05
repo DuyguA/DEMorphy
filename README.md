@@ -78,7 +78,7 @@ One can iterate over the lexicon words with a given prefix. Following code will 
 Links:
 
 * [PDF](https://arxiv.org/abs/1803.00902)
-* [Short Survey on German 2-Level Morphology](www.linkto2levelpage.de)
+* [Short Survey on German 2-Level Morphology](https://duygua.github.io/blog/2017/12/10/german-two-level-morphology/)
 * [Possible usages of DEMorphy in NLP projects](www.linktocustomer.de)
 
 ## Authors
