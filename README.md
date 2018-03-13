@@ -57,14 +57,14 @@ Iterating over all the lexicon:
 >>> from demorphy import Analyzer
 >>> analyzer = Analyzer(char_subs_allowed=True)
 >>> ix = analyzer.iter_lexicon_formatted()
->>> for i in x:
+>>> for i in ix:
         print(i)
 ```
 One can iterate over the lexicon words with a given prefix. Following code will iterate over all the words that begins with "ge":
 
 ```python
 >>> ix = analyzer.iter_lexicon_formatted(prefix=u"ge")
->>> for i in x:
+>>> for i in ix:
         print(i)
 ```
 
