@@ -83,7 +83,7 @@ Links:
 
 * [PDF](https://arxiv.org/abs/1803.00902)
 * [Short Survey on German 2-Level Morphology](https://duygua.github.io/blog/2017/12/10/german-two-level-morphology/)
-* [Possible usages of DEMorphy in NLP projects](www.linktocustomer.de)
+* [Possible usages of DEMorphy in NLP projects](https://duygua.github.io/blog/2018/03/06/chatbot-nlu-series-demorphy/)
 
 ## Authors
 
