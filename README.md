@@ -13,6 +13,10 @@ OS X & Linux, directly from Github:
 ```sh
 $ git clone https://github.com/DuyguA/DEMorphy
 $ cd DEMorphy
+```
+Download the dictionary file [demorphy/data/words.dg] and replace it under the corresponding directory again. Then you're ready to launch the setup script:
+
+```sh
 $ python setup.py install
 ```
 
