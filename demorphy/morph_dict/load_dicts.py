@@ -2,12 +2,11 @@ from __future__ import absolute_import, unicode_literals
 
 import os
 import collections
-import itertools
 
 from demorphy import dafsa
 from demorphy.data import lemmas, paradigms
 
-
+WORDS = None
 LoadedDict = collections.namedtuple("LoadedDict", [
     'words',
     "lemmas",
@@ -24,11 +23,12 @@ def load_dicts(path):
     Returns:
         A LoadedDict object, basicly tuple of dafsa, lemma list and paradigm list
     """
-
-    words = dafsa.LexiconDawg().load(os.path.join(path, "words.dg"))
+    global WORDS
+    if not WORDS:
+        WORDS = dafsa.LexiconDawg().load(os.path.join(path, "words.dg"))
 
     return LoadedDict(
-            words=words,
-            lemmas=lemmas,
-            paradigms=paradigms,
-            )
+        words=WORDS,
+        lemmas=lemmas,
+        paradigms=paradigms,
+    )
